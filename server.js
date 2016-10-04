@@ -6,5 +6,5 @@ http.createServer(function(request, response){
 	});
 	response.write('Natasha est ready ! :)')
 	response.end();
-	console.log('Natasha serveur tourne bien sur le port 1337');
+	console.log('Le serveur fonctionne sur le port 1337');
 }).listen(1337);
