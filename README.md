@@ -21,6 +21,7 @@ Lien : https://github.com/Daybed/DETT.git
     - git add nomfichier1 nomfichier2
     - git commit -m "message définissant la tâche de la fonction développée"
     - git status après git add permet de voir la liste des fichiers du commit
+    
 ##Annuler un commit effectué par erreur
   1. Voir ses commits
     - git log -p pour avoir les détails
@@ -34,6 +35,7 @@ Lien : https://github.com/Daybed/DETT.git
     - git checkout nomfichier
   6. Annuler / supprimer un fichier avant un commit
     - git reset HEAD -- fichier_a_supprimer
+    
 ##Télécharger les nouveautés et partager votre travail
   1. Télécharger les nouveautés
     - git pull
