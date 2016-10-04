@@ -1,19 +1,9 @@
 # DETT
 Digital Esir Time Table
 
-Lien : https://github.com/Daybed/DETT.git
-
-##Créer un nouveau dépôt
-
-  - git init
-  
-##Cloner un dépôt existant
-
-  - git init %URL%
-  
 ##Récupérer le dépôt
 
-  - git clone %URL%
+  - git clone https://github.com/Daybed/DETT.git
 
 ##Modifier le code et effectuer des commits
 
@@ -53,9 +43,9 @@ Lien : https://github.com/Daybed/DETT.git
 ##Travailler avec des branches
 
   1. Voir toutes vos branches
-    - git branch * lorsque vous êtes sur cette branche
+    - git branch
   2. Créer une branche
-    - git branche nouvellebranche
+    - git branch nouvellebranche
   3. Changer de branche
     - git checkout nombranche
   4. Fusionner les changements
@@ -67,4 +57,8 @@ Lien : https://github.com/Daybed/DETT.git
   7. Récupérer le travail mis de côté
     - git stash apply ou ...
     - git stash pop
+  8. Ajouter ou supprimer une branch sur le serveur
+    - git push --set-upstream origin/preprod nomdelabranche
+
+  
   
