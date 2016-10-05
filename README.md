@@ -1,13 +1,6 @@
 # DETT
 Digital Esir Time Table
 
-##Installer git
-
-  - Télécharger git : https://git-scm.com/downloads
-  - Sur windows, lancer gitBash, sinon, lancer terminal classique
-  - Taper votre nom pour vos futurs commits : git config --global user.name "Votre Nom Ici"
-  - Taper votre l'adresse email que vous utilisez sur github : git config --global user.email "votre_email@votre_email.com"
-
 ##Récupérer le dépôt
 
   - se placer à l'endroit où vous voulez copier le projet
@@ -42,13 +35,13 @@ Digital Esir Time Table
 
   - git commit --amend
   
-##Annuler le dernier commit (soft)
+##Revenir à un ancien commit
 
-  - git reset HEAD
+  - git reset --soft
 
-##Annuler tous les changements du dernier commit (hard)
+##Revenir à un ancien commit et supprimer le dernier 
 
-   - git reset --hard HEAD
+  - git reset --hard
 
 ##Annuler les modifications d'un fichier avant un commit
    
@@ -108,6 +101,18 @@ Digital Esir Time Table
    - Cliquer sur "Compare : nomDuneBranche" et choisir la branche à fusionner sur preprod
    - Choisir un nom et décrire la fonctionnalité qui va être fusionné à preprod
    - Cliquer sur "Create pull request"
-   - Quelqu'un pourra ensuite regarder votre code en allant dans "pull request", le commenter, montrer où il y a des erreurs etc... Cette personne devra ensuite valider ou refuser la pull request
-   - Si la pull request est refusée, il faut faire les modifications nécessaires
-   - Si la pull request est acceptée, cliquez sur la pull request et cliquez sur "merge pull request"
+   - Quelqu'un pourra ensuite regarde le code, le commenter, montrer ou il y a des erreurs etc... Cette personne devra ensuite valider ou refuser la pull request
+   - Une fois la pull request accepté, cliqué sur la pull request et cliquer sur "merge pull request"
+
+##Sélectionner un commit et l'appliquer à la branche courante
+
+  - git cherry pick
+
+##Revenir à un ancien commit existant
+
+  - git revert
+
+##Changer la base d'une branche
+
+  - git rebase
+  
