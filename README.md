@@ -3,62 +3,85 @@ Digital Esir Time Table
 
 ##Récupérer le dépôt
 
+  - se placer à l'endroit où vous voulez copier le projet
   - git clone https://github.com/Daybed/DETT.git
 
-##Modifier le code et effectuer des commits
+##Modifier le code et effectuer des commits en local
 
-  1. Indiquer les fichiers que vous avez modifié
-    - git status
-  2. Voir ce que vous avez changé
-    - git diff
-  3. Faire un commit (local)
-    - git add nomfichier1 nomfichier2
-    - git commit -m "message définissant la tâche de la fonction développée"
-    - git status après git add permet de voir la liste des fichiers du commit
+  - git add nomDuFichierModifié1 nomDuFichierModifié2
+  - git commit -m "message définissant la tâche de la fonction développée"
     
-##Annuler un commit effectué par erreur
-
-  1. Voir ses commits
-    - git log -p pour avoir les détails
-  2. Modifier le dernier message de commit
-    - git commit --amend
-  3. Annuler le dernier commit (soft)
-    - git reset HEAD
-  4. Annuler tous les changements du dernier commit (hard)
-    - git reset --hard HEAD
-  5. Annuler les modifications d'un fichier avant un commit
-    - git checkout nomfichier
-  6. Annuler / supprimer un fichier avant un commit
-    - git reset HEAD -- fichier_a_supprimer
+##Envoyer les commits locaux d'une branche sur la branche distante (en ligne)
+  
+  - git push
     
-##Télécharger les nouveautés et partager votre travail
+##Voir les fichiers que vous avez modifié
 
-  1. Télécharger les nouveautés
-    - git pull
-  2. Envoyer vos commits au serveur
-    - git push
-  3. Annuler un commit publié
-    - git revert numérofichier
+  - git status
+    
+##Voir le code que vous avez changé
 
-##Travailler avec des branches
+  - git diff
+    
+##Voir ses commits (locaux)
 
-  1. Voir toutes vos branches
-    - git branch
-  2. Créer une branche
-    - git branch nouvellebranche
-  3. Changer de branche
-    - git checkout nombranche
-  4. Fusionner les changements
-    - git merge
-  5. Mettre à jour les branches en local par rapport au serveur
-    - git fetch
-  6. Mettre de côté un travail en cours avant de changer de branche ou de travailler sur autre chose
-    - git stash
-  7. Récupérer le travail mis de côté
-    - git stash apply ou ...
-    - git stash pop
-  8. Ajouter ou supprimer une branch sur le serveur
-    - git push --set-upstream origin/preprod nomdelabranche
+  - git log -p pour avoir les détails
+  
+##Modifier le dernier message de commit
+
+  - git commit --amend
+  
+##Annuler le dernier commit (soft)
+
+  - git reset HEAD
+
+##Annuler tous les changements du dernier commit (hard)
+
+   - git reset --hard HEAD
+
+##Annuler les modifications d'un fichier avant un commit
+   
+   - git checkout nomfichier
+    
+##Télécharger les nouveautés d'une branche
+
+  - git pull
+
+##Mettre de côté un travail en cours avant de changer de branche ou de travailler sur autre chose
+   
+   - git stash
+  
+##Récupérer le travail mis de côté
+
+   - git stash apply ou ...
+   - git stash pop
+
+##Voir toutes vos branches
+  
+  - git branch
+
+##Créer une branche en local
+   
+   - git checkout preprod
+   - git pull
+   - git branch nouvelleBranche
+
+##Ajouter la branche locale sur le serveur git
+
+  - git push --set-upstream origin/preprod nomdelabranche
+  
+##Changer de branche
+
+   - git checkout nomDeLaBranche
+
+##Mettre à jour les branches locales (récupérer les branches du serveur git)
+
+  - git fetch
+  
+##Fusionner les changements
+   
+   - git merge
+    
 
   
   
