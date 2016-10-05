@@ -80,7 +80,7 @@ Digital Esir Time Table
 
 ##Mettre à jour les branches locales (récupérer les branches du serveur git)
 
-  - git fetch : Télécharge en locale les branches que vous n'aviez pas encore, ne supprime pas en locale les branches qui ont été supprimé sur le serveur git
+  - git fetch : Télécharge en local les branches que vous n'aviez pas encore, ne supprime pas en local les branches qui ont été supprimées sur le serveur git
   
 ##Supprimer une branche sur le repo git
 
@@ -101,5 +101,5 @@ Digital Esir Time Table
    - Cliquer sur "Compare : nomDuneBranche" et choisir la branche à fusionner sur preprod
    - Choisir un nom et décrire la fonctionnalité qui va être fusionné à preprod
    - Cliquer sur "Create pull request"
-   - Quelqu'un pourra ensuite regarde le code modifier et valider ou refuser la pull request
-   - Une fois la pull request accepté, cliqué sur la pull request et cliquer sur "merge pull"
+   - Quelqu'un pourra ensuite regarde le code, le commenter, montrer ou il y a des erreurs etc... Cette personne devra ensuite valider ou refuser la pull request
+   - Une fois la pull request accepté, cliqué sur la pull request et cliquer sur "merge pull request"
