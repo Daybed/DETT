@@ -6,6 +6,10 @@ Digital Esir Time Table
   - se placer à l'endroit où vous voulez copier le projet
   - git clone https://github.com/Daybed/DETT.git
 
+##Obtenir une aide pour les commandes git
+
+  - git help
+
 ##Modifier le code et effectuer des commits en local
 
   - git add nomDuFichierModifié1 nomDuFichierModifié2
@@ -78,9 +82,15 @@ Digital Esir Time Table
 
   - git fetch
   
-##Fusionner les changements
+##Fusionner les changements d'une branche sur la branche preprod
    
-   - git merge
+   - Aller sur le répertoire github du projet
+   - Cliquer sur "code" (en haut à gauche)
+   - Cliquer sur "Branch : nomDuneBranche" et choisir "preprod"
+   - Cliquer sur "New pull request"
+   - Cliquer sur "Compare : nomDuneBranche" et choisir la branche à fusionner sur preprod
+   - Choisir un nom et décrire la fonctionnalité qui va être fusionné à preprod
+   - Cliquer sur "Create pull request"
     
 
   
