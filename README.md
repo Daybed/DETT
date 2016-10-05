@@ -1,7 +1,7 @@
 # DETT
 Digital Esir Time Table
 
-##Récupérer le dépôt
+##Récupérer le dépôt 1
 
   - se placer à l'endroit où vous voulez copier le projet
   - git clone https://github.com/Daybed/DETT.git
