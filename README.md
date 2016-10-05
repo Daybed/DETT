@@ -1,6 +1,13 @@
 # DETT
 Digital Esir Time Table
 
+##Installer git
+
+  - Télécharger git : https://git-scm.com/downloads
+  - Sur windows, lancer gitBash, sinon, lancer terminal classique
+  - Taper votre nom pour vos futurs commits : git config --global user.name "Votre Nom Ici"
+  - Taper votre l'adresse email que vous utilisez sur github : git config --global user.email "votre_email@votre_email.com"
+
 ##Récupérer le dépôt
 
   - se placer à l'endroit où vous voulez copier le projet
@@ -80,7 +87,17 @@ Digital Esir Time Table
 
 ##Mettre à jour les branches locales (récupérer les branches du serveur git)
 
-  - git fetch
+  - git fetch : Télécharge en local les branches que vous n'aviez pas encore, ne supprime pas en local les branches qui ont été supprimées sur le serveur git
+  
+##Supprimer une branche sur le repo git
+
+  - Cliquer sur "code" (en haut à gauche)
+  - Cliquer sur "branches"
+  - Supprimer la branche avec le bouton (la branche sera toujours présente en locale sur votre pc)
+
+##Supprimer une branche en local qui n'existe plus en distant
+
+  - git branch -d "nomDeLaBranche"
   
 ##Fusionner les changements d'une branche sur la branche preprod
    
@@ -91,7 +108,6 @@ Digital Esir Time Table
    - Cliquer sur "Compare : nomDuneBranche" et choisir la branche à fusionner sur preprod
    - Choisir un nom et décrire la fonctionnalité qui va être fusionné à preprod
    - Cliquer sur "Create pull request"
-    
-
-  
-  
+   - Quelqu'un pourra ensuite regarder votre code en allant dans "pull request", le commenter, montrer où il y a des erreurs etc... Cette personne devra ensuite valider ou refuser la pull request
+   - Si la pull request est refusée, il faut faire les modifications nécessaires
+   - Si la pull request est acceptée, cliquez sur la pull request et cliquez sur "merge pull request"
